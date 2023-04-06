@@ -1,8 +1,18 @@
-### Hi there 👋
+### Hi there, I am Karataso, A programing enthusiast
 
+- 🔭 I’m currently working on Terrmux-Arch, a litle script to bring the power opf arch linux to your pocket
+- 🌱 I’m currently learning Python
+- 💬 Ask me about ...
+- 📫 How to reach me:
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
 <!--
+<p align="center">
+<img src="https://user-images.githubusercontent.com/111629664/230491716-446755bf-cf4e-4585-bacd-6e34997d4340.gif" alt="my banner">
+</p>
+
 **Karataso/Karataso** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-<p align="center">}
+<p align="center">
 <img src="https://user-images.githubusercontent.com/111629664/230491716-446755bf-cf4e-4585-bacd-6e34997d4340.gif" alt="my banner">
 </p>
 Here are some ideas to get you started:
