@@ -1,11 +1,9 @@
 ### Hi there, I am Karataso, A programing enthusiast
 
-- 🔭 I’m currently working on Terrmux-Arch, a litle script to bring the power opf arch linux to your pocket
-- 🌱 I’m currently learning Python
+- 🔭 I’m currently working on Terrmux-Arch, a litle script to bring the power of arch linux to your pocket
+- 🌱 I’m currently learning Python and basic Linux
 - 💬 Ask me about ...
-- 📫 How to reach me:
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 📫 How to reach me: Karataso@protonmail.com
 <!--
 <p align="center">
 <img src="https://user-images.githubusercontent.com/111629664/230491716-446755bf-cf4e-4585-bacd-6e34997d4340.gif" alt="my banner">
