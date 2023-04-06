@@ -2,7 +2,9 @@
 
 <!--
 **Karataso/Karataso** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
+<p align="center">}
+<img src="https://user-images.githubusercontent.com/111629664/230491716-446755bf-cf4e-4585-bacd-6e34997d4340.gif" alt="my banner">
+</p>
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
