@@ -1,7 +1,7 @@
 ### Hi there, I am Karataso, A programing enthusiast
 
-- 🔭 I’m currently working on Terrmux-Arch, a litle script to bring the power of arch linux to your pocket
-- 🌱 I’m currently learning Python and basic Linux
+- 🔭 I’m currently working on EazyPacman, a litle script to make the usage of pacman basic actions way easier
+- 🌱 I’m currently learning Python
 - 💬 Ask me about ...
 - 📫 How to reach me: Karataso@protonmail.com
 <!--
