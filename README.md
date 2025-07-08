@@ -1,7 +1,7 @@
 ### Hi there, I am Karataso, A programing enthusiast
 
 - 🔭 I’m currently working on EazyPacman, a litle script to make the usage of pacman basic actions way easier
-- 🌱 I’m currently learning Python
+- 🌱 I’m currently learning Java
 - 💬 Ask me about ...
 - 📫 How to reach me: Karataso@protonmail.com
 <!--
