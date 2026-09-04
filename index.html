@@ -5,94 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karataso | Portfolio</title>
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="scripts/lang.js" defer></script>
 </head>
 <body>
-    <div class="background-blobs">
-        <div class="blob blob1"></div>
-        <div class="blob blob2"></div>
-    </div>
 
-    <header class="glass">
-        <nav>
-            <div class="nav-logo gradient-text">KARATASO</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="#home" class="logo">&gt; Karataso<span>_</span></a>
+        <div class="nav-links">
+            <a href="#about" class="nav-file" data-i18n="nav.about">About</a>
+            <a href="#projects" class="nav-file" data-i18n="nav.projects">Projects</a>
+            <a href="cv.html" class="nav-file">CV</a>
+            <button id="lang-toggle" class="nav-lang" type="button">./es.sh</button>
+        </div>
+    </nav>
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="gradient-text">Crafting Digital Experiences</h1>
-                <p>Cafeine fueled coding, just for the love of the art</p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn primary">View My Work</a>
-                    <a href="#contact" class="btn secondary">Get In Touch</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1 data-i18n="hero.title">Code with Heart, Ship with Soul</h1>
+                    <p class="subtitle" data-i18n="hero.subtitle">Caffeine-fueled coding, just for the love of the art</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-solid" data-i18n="hero.view">View My Work</a>
+                        <a href="#contact" class="btn btn-ghost" data-i18n="hero.touch">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="code-card">
+                    <div class="code-card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-file">me.java</span>
+                    </div>
+                    <pre><code><span class="kw">class</span> <span class="cls">Me</span> <span class="kw">extends</span> <span class="cls">Human</span> {
+    <span class="kw">private final</span> String name = <span class="str">"Karataso"</span>;
+    <span class="kw">private final</span> String[] roles = {
+        <span class="str">"Full-Stack Developer"</span>,
+        <span class="str">"Java"</span>,
+        <span class="str">"JavaScript"</span>,
+        <span class="str">"Linux"</span>
+    };
+
+    <span class="kw">while</span> (alive) {
+        drink(<span class="str">"coffee"</span>);
+        code(<span class="kw">for</span> the love of the art);
+    }
+}</code></pre>
                 </div>
             </div>
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="glass about-card">
-                    <h3>My Story</h3>
-                    <p>I am a under graduate student at Univesidad tecnologica de Nayarit, I am pasionate abouth programming and i do this for the love of the art, i woul however love to stop coding random things and formalize this as a full time job, i am a very capable full stack developer</p>
-                </div>
-                <div class="glass about-card">
-                    <h3>Skills</h3>
-                    <div class="skills-tags">
-                        <span><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span><i class="fa-brands fa-html5"></i> HTML/CSS</span>
-                        <span><i class="fa-solid fa-database"></i></i> MariaDB</span>
-                        <span><i class="fa-solid fa-database"></i></i> MySQL</span>
-                        <span><i class="fa-brands fa-java"></i> Java</span>
+            <div class="container">
+                <div class="about-grid">
+                    <div class="sidebar-block about-text">
+                        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                        <p data-i18n="about.text">Undergraduate student at Universidad Tecnológica de Nayarit, driven by a genuine passion for software development. I code for the love of the craft, and my goal is to turn that passion into a full-time career. As a capable full-stack developer, I enjoy building complete solutions from front to back.</p>
+                    </div>
+                    <div class="sidebar-block about-skills">
+                        <h2 class="section-title" data-i18n="skills.title">Skills</h2>
+                        <ul class="skills">
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <li><i class="fa-brands fa-html5"></i> HTML/CSS</li>
+                            <li><i class="fa-solid fa-database"></i> MariaDB</li>
+                            <li><i class="fa-solid fa-database"></i> MySQL</li>
+                            <li><i class="fa-brands fa-java"></i> Java</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="glass project-card">
-                    <div class="project-img"><img src="assets/ghost.png"></div>
-                    <h3>Kclient</h3>
-                    <p>A Minecraft 1.8.9 Forge based, Privacy respecting Hacked client.</p>
-                    <p><br></p>
-                    <a href="Kclient.html"> Learn More → </a>
-                </div>
-                <!-- Project 2 -->
-                <div class="glass project-card">
-                    <div class="project-img"><img src="assets/DataStructuresIcons.png"></div>
-                    <h3>Data Structures</h3>
-                    <p>Interactive, Educative material made to simplify understanding of Data Structures, Coded as a college project using HTML, CSS and JavaScript, Simple enough a kid could understand</p>
-                    <a href="https://karataso.github.io/ProyectoEstructuraDeDatos/"> View Now → </a>
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <a class="cv-card" href="Kclient.html">
+                        <div class="project-media">
+                            <img src="assets/ghost.png" alt="Kclient">
+                        </div>
+                        <div class="project-body">
+                            <div class="card-header">
+                                <h3>Kclient</h3>
+                                <span class="tech-tag">Java</span>
+                            </div>
+                            <p data-i18n="project.kclient.desc">A Minecraft 1.8.9 Forge based, Privacy respecting Hacked client.</p>
+                            <span class="project-link" data-i18n="project.kclient.link">Learn More</span>
+                        </div>
+                    </a>
+                    <a class="cv-card" href="https://karataso.github.io/ProyectoEstructuraDeDatos/">
+                        <div class="project-media">
+                            <img src="assets/DataStructuresIcons.png" alt="Data Structures">
+                        </div>
+                        <div class="project-body">
+                            <div class="card-header">
+                                <h3>Data Structures</h3>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <p data-i18n="project.ds.desc">Interactive, Educative material made to simplify understanding of Data Structures, Coded as a college project using HTML, CSS and JavaScript, Simple enough a kid could understand</p>
+                            <span class="project-link" data-i18n="project.ds.link">View Now</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Let's Connect</h2>
-            <div class="glass contact-form">
-                <p>Have a project in mind? Let's talk!</p>
-                <p><br></p>
-                <a href="mailto:Karataso@protonmail.com" class="btn primary">Send Email</a>
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact.title">Ping Me</h2>
+                <p class="contact-echo"><span class="cmd">$ ping -c 1 karataso</span><br><span data-i18n="contact.reply">64 bytes from karataso: online — usually replies fast :) [Or... check the contact info in the footer below.]</span></p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Karataso. Built with love, sweat and much much cafeine.</p>
-        <p><i class="fa-brands fa-github"></i><a href="https://github.com/Karataso"> GitHub</a></p>
-        <p><i class="fa-solid fa-code-branch"></i><a href="https://codeberg.org/Karataso"> Codeberg</a></p>
-        <p><i class="fa-solid fa-envelope"></i><a href="mailto:Karataso@protonmail.com"> Email</a></p>
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <p data-i18n="footer.tagline">&copy; 2026 Karataso. Built with love, sweat and much much caffeine.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Karataso"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://codeberg.org/Karataso"><i class="fa-solid fa-code-branch"></i> Codeberg</a>
+                <a href="mailto:Karataso@protonmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://discord.com/users/742480978110316584"><i class="fa-brands fa-discord"></i> Discord</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
