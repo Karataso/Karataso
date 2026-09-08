@@ -3,89 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kclient | Privacy respecting utility client</title>
+    <title>Kclient — Ghost client for Minecraft 1.8.9</title>
     <link rel="stylesheet" href="styles/kclient.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="nav-brand">By: Karataso</div>
+        <div class="nav-brand">KCLIENT</div>
         <a href="index.html" class="back-link">Return to Home</a>
     </header>
 
     <main>
         <section class="hero">
-            <h1>KCLIENT</h1>
-            <h3>Looks Legit, Feels Unfair</h3>
-            <p>Open Source, Privacy respecting utility client for minecraft 1.8.9 </p>
-            <a href="Philosophy.html" class="status-indicator" style="text-decoration: none;">● Built to last, Built to win</a>
+            <h1>Kclient</h1>
+            <p class="hero-sub">Free &amp; open source ghost client for Minecraft 1.8.9 (Forge). A fork of Raven bS 13, reworked into a multi-server client with zero telemetry.</p>
+            <p class="hero-meta">v1.7.1 "Vox Populi: Resculpta" &middot; 2026-08-26 &middot; Java</p>
+            <nav class="hero-links">
+                <a href="https://codeberg.org/Karataso/Kclient/releases">Releases</a>
+                <a href="https://codeberg.org/Karataso/Kclient">Source</a>
+                <a href="https://codeberg.org/Karataso/Kclient/raw/branch/main/CHANGELOG.md">Changelog</a>
+                <a href="https://codeberg.org/Karataso/Kclient/raw/branch/main/FEATURES.md">Feature list</a>
+                <a href="Philosophy.html">Philosophy</a>
+            </nav>
+        </section>
+
+        <section id="about">
+            <h2>What it is</h2>
+            <p>Kclient is a ghost client: instead of blatant exploits, its combat modules are tuned to mimic human behavior &mdash; humanized click patterns, reaction-based aim, tick-accurate resets &mdash; so the edge stays within what anti-cheats tolerate rather than fighting them head-on.</p>
+            <p>There is no telemetry, no phoning home, no account system. Everything runs locally and your configs stay on your disk. The full source is published on Codeberg and can be audited or built yourself.</p>
+            <table class="facts">
+                <tr><th>Latest release</th><td><a href="https://codeberg.org/Karataso/Kclient/releases/tag/1.7.1">1.7.1</a> &mdash; 2026-08-26</td></tr>
+                <tr><th>Game</th><td>Minecraft 1.8.9 with Forge (standalone since v1.7, LabyMod is no longer supported)</td></tr>
+                <tr><th>Base</th><td><a href="https://codeberg.org/strangerrrrs/raven-bS">Raven bS 13</a> fork</td></tr>
+                <tr><th>Language</th><td>Java</td></tr>
+                <tr><th>Cost</th><td>Free, no premium tiers, no keys</td></tr>
+            </table>
         </section>
 
         <section id="modules">
-            <h2>DESIGNED FOR PERFORMANCE</h2>
+            <h2>Modules</h2>
+            <p class="section-note">Two ClickGUIs ship with the client: cheat modules (blue accent) and legit modules (green accent). A few examples per area &mdash; the full breakdown (~60 modules) lives in <a href="https://codeberg.org/Karataso/Kclient/raw/branch/main/FEATURES.md">FEATURES.md</a>.</p>
             <div class="features-grid">
                 <div class="feature-box">
                     <h3>Combat</h3>
-                    <p>Aim Assistance, Auto Clicker and other suite of combat modules desinged for stealth and precision.</p>
+                    <p>AutoClicker with selectable click patterns, Aim Assist, Reach, HitSelect, BlockHit with a predictive mode, Backtrack.</p>
                 </div>
                 <div class="feature-box">
                     <h3>Movement</h3>
-                    <p>JumpReset, HitSelect, Snaptap and other modules desinged to help you move smoothly within the game's rules, looking like a pro.</p>
+                    <p>BetterMove (SnapTap + Instant Stop), Sprint Reset (W-Tap / S-Tap), Jump Reset, KB Delay, Sprint.</p>
                 </div>
                 <div class="feature-box">
-                    <h3>Visuals</h3>
-                    <p>Clean HUD, ESP, Nametags, Xray. Among other modules made to give you all the information you may need.</p>
+                    <h3>Latency tools</h3>
+                    <p>Backtrack with queue-based packet release, Fake Lag (exit-only desync), Blink, Ping Fix so lag modules don't spike your scoreboard ping.</p>
                 </div>
                 <div class="feature-box">
-                    <h3>Lag on your side</h3>
-                    <p>Backtrack and FakeLag, modules wich did not exist in the original client. now added and polished. get smooth gameplay while it looks like lag is on your favor (it will be ;D)</p>
+                    <h3>Visuals &amp; HUD</h3>
+                    <p>ESP, Tracers, Nametags, Xray, Chams, BedESP, plus a HUD editor: keystrokes, armor, effects, reach display, and more.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Legit side</h3>
+                    <p>1.7-style animations and item positions, camera tweaks with FreeLook, No Hurt Cam, Fullbright &mdash; the above-board half of the client.</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Client</h3>
+                    <p>Terminal with bash-like history, chat commands (<code>.</code> prefix), profile manager with favorites, scripts manager, custom themes with gradient pickers.</p>
                 </div>
             </div>
         </section>
 
-        <section id="access">
-            <div class="download-cta">
-                <h2>READY TO DEPLOY?</h2>
-                <p>Download the latest build and experience the difference.</p>
-                <a href="https://codeberg.org/Karataso/Kclient/releases" class="btn-download">DOWNLOAD NOW</a>
-                <a href="https://codeberg.org/Karataso/Kclient" class="btn-secondary-k">VIEW SOURCE</a>
-                <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.5;">Required: Forge 1.8.9 Environment</p>
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <div class="shots">
+                <figure>
+                    <a href="https://codeberg.org/Karataso/Kclient/media/branch/main/screenshot.png" target="_blank" rel="noopener">
+                        <img src="https://codeberg.org/Karataso/Kclient/media/branch/main/screenshot.png" alt="Kclient ClickGUI (cheat modules)">
+                    </a>
+                    <figcaption>ClickGUI &mdash; cheat modules</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://codeberg.org/Karataso/Kclient/media/branch/main/screenshot2.png" target="_blank" rel="noopener">
+                        <img src="https://codeberg.org/Karataso/Kclient/media/branch/main/screenshot2.png" alt="Kclient Legit GUI (legit modules)">
+                    </a>
+                    <figcaption>Legit GUI &mdash; legit modules</figcaption>
+                </figure>
             </div>
+        </section>
+
+        <section id="getting">
+            <h2>Getting it</h2>
+            <ol class="steps">
+                <li>Install <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.8.9.html">Forge 1.8.9</a>.</li>
+                <li>Grab <code>keystrokes.jar</code> from the latest <a href="https://codeberg.org/Karataso/Kclient/releases">release</a> and drop it into your <code>.minecraft/mods</code> folder.</li>
+                <li>Launch the game and open the ClickGUI with your configured keybind. Chat commands use the <code>.</code> prefix.</li>
+            </ol>
+            <p class="build-note">Building from source: JDK 8 for the project, Java 17 for the Gradle JVM, then <code>./gradlew build</code>. See the <a href="https://codeberg.org/Karataso/Kclient">repo README</a>.</p>
         </section>
 
         <section id="changelog">
-            <h2>DEVELOPMENT LOGS</h2>
-            <div style="opacity: 0.6; font-family: 'Courier New', monospace; font-size: 0.9rem;">
-                <p>> [v1.6.0] Coming soon...</p>
-                <p>> [v1.5.0] First public release, Source code is available on Codeberg.</p>
-                <p>> [v1.4.5] Module polishing and quality assurance testing, confirmed core modules bypass Polar AntiCheat if tuned well.</p>
-                <p>> [v1.4.0] Changed the gui appearance, added backtrack and removed unnecessary modules.</p>
-                <p>> [v1.3.0 Or Lower] Buggy, Outdated, and Unreliable versions, still in development from raven bS</p>
-                
+            <h2>Recent changes</h2>
+            <div class="release">
+                <h3>1.7.1 &mdash; Vox Populi: Resculpta <span class="date">2026-08-26</span></h3>
+                <ul>
+                    <li>New modules: Motion Blur, NoRender, BedESP, DamageTint, Hitbox Tweaks</li>
+                    <li>Crimson theme + custom gradient theme with color pickers</li>
+                    <li>Backtrack reverted to the 1.6.5 pipeline, target lock for the whole fight, flush-on-knockback option</li>
+                    <li>Jump Reset now fires on the knockback tick (actually works), SnapTap fixed</li>
+                    <li>BlockHit predictive mode learns your opponent's attack rhythm; HitSelect reworked</li>
+                    <li>Profiles save manually now; command system unified, new <code>toggle</code> command</li>
+                </ul>
             </div>
+            <div class="release">
+                <h3>1.7 &mdash; Unchained <span class="date">2026-08-05</span></h3>
+                <ul>
+                    <li>LabyMod support dropped; the client is standalone Forge from now on</li>
+                    <li>Whole legit module set added (animations, camera, HUD)</li>
+                    <li>GUI overhaul, modlist spoofing, combat reworks</li>
+                </ul>
+            </div>
+            <p class="section-note">Older releases: see the full <a href="https://codeberg.org/Karataso/Kclient/raw/branch/main/CHANGELOG.md">CHANGELOG.md</a> or the <a href="https://codeberg.org/Karataso/Kclient/releases">release history</a> on Codeberg.</p>
         </section>
+
         <section id="disclosures">
             <div class="callout credits">
                 <div class="callout-header"><i class="fa-solid fa-scroll"></i> Credits</div>
-                <p>Kclient is built upon the foundation of <a href="https://codeberg.org/strangerrrrs/raven-bS" style="color: var(--k-blue); text-decoration: none;">Raven bS</a>. Special thanks to Strangerrrrrs for the amazing client raven bS is, if you want a more general or even blatant client for hypixel, check raven bS out :D</p>
+                <p>Kclient is built on the foundation of <a href="https://codeberg.org/strangerrrrs/raven-bS">Raven bS</a> by strangerrrrrs. If you want a more general (or blatant) client for Hypixel, go check it out.</p>
             </div>
 
             <div class="callout note">
-                <div class="callout-header"><i class="fa-solid fa-circle-info"></i> Note</div>
-                <p>This client is primarily developed and tested on <strong>LabyMod 4 + Forge</strong>.</p>
-                <p>While it will likely work on <strong>Forge alone</strong>, the best compatibility and stability are expected when using <strong>LabyMod 4 + Forge</strong>, as that is the environment used for testing.</p>
+                <div class="callout-header"><i class="fa-solid fa-circle-info"></i> Compatibility</div>
+                <p>Standalone Forge 1.8.9 since v1.7 &mdash; LabyMod is no longer supported. Module behavior has historically been tuned and tested mainly against Polar and Grim; nothing is guaranteed against every anti-cheat or every server.</p>
             </div>
-            
+
             <div class="callout warning">
                 <div class="callout-header"><i class="fa-solid fa-triangle-exclamation"></i> Warning</div>
-                <p>This software is provided for educational purposes only. Use at your own risk. The developers are not responsible for any bans or punishments on any servers.</p>
+                <p>This software is provided for educational purposes only. Use at your own risk. The developer is not responsible for any bans or punishments on any servers.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Kclient. Designed for excellence, Looks legit, Feels Unfair.</p>
-        <p style="margin-top: 10px;">Raven bS 13 fork by Karataso</p>
+        <p>Kclient is free software, hosted on <a href="https://codeberg.org/Karataso/Kclient">Codeberg</a>. Not affiliated with Mojang or Microsoft.</p>
     </footer>
 </body>
 </html>

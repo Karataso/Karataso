@@ -93,7 +93,7 @@
                                 <h3>Kclient</h3>
                                 <span class="tech-tag">Java</span>
                             </div>
-                            <p data-i18n="project.kclient.desc">A Minecraft 1.8.9 Forge based, Privacy respecting Hacked client.</p>
+                            <p data-i18n="project.kclient.desc">Privacy-first Minecraft 1.8.9 utility client built on Forge. Zero telemetry, fully community-audited through public repositories.</p>
                             <span class="project-link" data-i18n="project.kclient.link">Learn More</span>
                         </div>
                     </a>
@@ -106,8 +106,21 @@
                                 <h3>Data Structures</h3>
                                 <span class="tech-tag">JavaScript</span>
                             </div>
-                            <p data-i18n="project.ds.desc">Interactive, Educative material made to simplify understanding of Data Structures, Coded as a college project using HTML, CSS and JavaScript, Simple enough a kid could understand</p>
+                            <p data-i18n="project.ds.desc">Interactive visualizer for learning data structures. Built as a college project with HTML, CSS and JavaScript — simple enough a kid could understand.</p>
                             <span class="project-link" data-i18n="project.ds.link">View Now</span>
+                        </div>
+                    </a>
+                    <a class="cv-card" href="https://karataso.github.io/CasaTabachines/">
+                        <div class="project-media">
+                            <img src="https://karataso.github.io/CasaTabachines/images/Pasillo_Afuera.webp" alt="Casa Tabachines">
+                        </div>
+                        <div class="project-body">
+                            <div class="card-header">
+                                <h3>Casa Tabachines</h3>
+                                <span class="tech-tag">Freelance</span>
+                            </div>
+                            <p data-i18n="project.casa.desc">Commercial website for a bungalow rental business in Rincón de Guayabitos. Image carousels, bilingual i18n, contact integration and booking flow.</p>
+                            <span class="project-link" data-i18n="project.casa.link">View Site</span>
                         </div>
                     </a>
                 </div>
@@ -134,5 +147,14 @@
         </div>
     </footer>
 
+    <script>
+    document.querySelectorAll('.cv-card').forEach(function(card) {
+        card.addEventListener('mousemove', function(e) {
+            var rect = card.getBoundingClientRect();
+            card.style.setProperty('--mouse-x', (e.clientX - rect.left) + 'px');
+            card.style.setProperty('--mouse-y', (e.clientY - rect.top) + 'px');
+        });
+    });
+    </script>
 </body>
 </html>
